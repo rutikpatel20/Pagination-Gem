@@ -21,7 +21,33 @@
       <% end %>
     </tbody>
   </table>
-  <%= will_paginate @posts %>
+  <%# Digg Pagination %>
+  <div class="digg_pagination">
+    <div class="page_info">
+      <%= page_entries_info @products %>
+    </div>
+    <%= will_paginate @products %>
+  </div>
+  <br>
+  <br>
+ <hr>
+  <%# Apple Pagination %>
+  <div class="apple_pagination">
+    <div class="page_info">
+      <%= page_entries_info @products %>
+    </div>
+    <%= will_paginate @products %>
+  </div>
+  <br>
+  <br>
+ <hr>
+  <%# Flicker Pagination %>
+  <div class="flickr_pagination">
+    <div class="page_info">
+      <%= page_entries_info @products %>
+    </div>
+    <%= will_paginate @products %>
+  </div>
   <br>
   <%= link_to 'New Product', new_product_path, class:" center btn-warning border-0 rounded-pill shadow p-3 m-3" %>
 </div>
