@@ -21,6 +21,7 @@
       <% end %>
     </tbody>
   </table>
+  <%= paginate @movies %>
   <br>
   <%= link_to 'New Movie', new_movie_path, class:" center btn-warning border-0 rounded-pill shadow p-3 m-3" %>
 </div>
